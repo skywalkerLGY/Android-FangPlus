@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/zhihuihuanbao" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="您当前的位置：江苏大学" >
+    </TextView>
+    <TextView
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="____________________________________"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="附近回收机"/>
+    <TextView
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="____________________________________"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        >
+    </TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:background="@drawable/map"/>
+    <TextView
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="____________________________________"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:text="可回收物价目表" />
+    <TextView
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="____________________________________"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="17dp"
+        >
+        <ImageView
+            android:layout_width="380dp"
+            android:layout_height="300dp"
+            android:background="@drawable/ac" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

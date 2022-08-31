@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="住户姓名:"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etpname1"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="-15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="住户地址:"
+
+            android:textSize="20dp"/>
+
+        <EditText
+            android:layout_width="230dp"
+            android:id="@+id/etpwd1"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="-15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上门时间:"
+            android:id="@+id/txtParkNum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etParkNum"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:digits="0123456789"
+            android:inputType="phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="-15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码:"
+            android:id="@+id/txtCarName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etCarname"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:digits="0123456789"
+            android:inputType="phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="-15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备用号码:"
+            android:id="@+id/CarPhoneNum"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etcarphonenum"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:digits="0123456789"
+            android:inputType="phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="-15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回收重量:"
+            android:id="@+id/ReleventName"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etReleventName"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:digits="0123456789"
+            android:inputType="phone"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="-15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回收单号:"
+            android:id="@+id/textView1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/etphone1"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:maxLength="3"
+            android:digits="0123456789"
+            android:inputType="phone"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:text="预约"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:background="#85DBE6"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"/>
+
+</LinearLayout>

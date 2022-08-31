@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <com.example.Fang_PLUS.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/ly_tab_menu"
+                android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/test"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:background="@drawable/zhihuihuanbao"
+                        />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:id="@+id/img_fenlei"
+                        android:background="@drawable/new_house" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:id="@+id/img_yuyue"
+                        android:background="@drawable/old_house" />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:id="@+id/img_lajilishi"
+                        android:background="@drawable/lend_house" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:id="@+id/img_tianxie"
+                        android:background="@drawable/xiezi_house" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="50dp"
+                        android:id="@+id/img_paint"
+                        android:background="@drawable/paint_house" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:background="#2B2196F3"
+                        android:gravity="center"
+                        android:singleLine="false"
+                        android:text="  新房  "
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="false"
+                        android:background="#59CDF1A9"
+                        android:textStyle="bold"
+                        android:text="     二手房  "/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="false"
+                        android:background="#27FFE503"
+                        android:textStyle="bold"
+                        android:text="       租房  "/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="false"
+                        android:background="#1AFF3700"
+                        android:textStyle="bold"
+                        android:text="       商铺  "/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+
+                        android:background="#169C27B0"
+                        android:singleLine="false"
+                        android:text="       装修  "
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="13dp">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/loc"
+                        />
+
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您的位置：江苏大学" >
+                    </TextView>
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="                      附近房源：" >
+                    </TextView>
+                    <Button
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:text="地图"
+                        android:id="@+id/btn_chakan"
+                        android:textColor="#E5665757"
+                        android:background="@drawable/bt_shape"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="120dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/toutiao"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <com.example.view.PublicNoticeView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/publicnotice">
+                        </com.example.view.PublicNoticeView>
+                        <com.example.view.PublicNoticeView2
+                            android:layout_marginTop="-10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/publicnotice2">
+                        </com.example.view.PublicNoticeView2>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <ImageView
+                        android:paddingBottom="5dp"
+                        android:layout_width="205dp"
+                        android:layout_height="206dp"
+                        android:src="@drawable/shujuzhoubao"
+                        android:paddingRight="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:layout_width="170dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/main_1" />
+
+                        <ImageView
+                            android:layout_marginTop="-12dp"
+                            android:layout_width="170dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/main_2"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    >
+                    <ImageView
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/guanggao"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/txt_adv"
+                        android:text="  为你推荐" >
+                    </TextView>
+
+                </LinearLayout>
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/viewpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp" />
+                <LinearLayout
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/viewpager"
+                    android:background="#96ADF7D7"
+                    android:orientation="vertical"
+                    android:padding="5dp" >
+
+                    <TextView
+                        android:id="@+id/image_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="湖西映月 128-360m² 即将开盘"
+                        android:textColor="#3E5651" />
+                    <LinearLayout
+                        android:id="@+id/show_pointer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        >
+
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@drawable/fangjia"/>
+                <androidx.viewpager.widget.ViewPager
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:id="@+id/house_viewpager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="3300dp">
+
+                    <androidx.viewpager.widget.PagerTabStrip
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:id="@+id/pagertab"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" />
+                </androidx.viewpager.widget.ViewPager>
+
+
+            </LinearLayout>
+        </com.example.Fang_PLUS.MyScrollView>
+
+
+    <FrameLayout
+    android:id="@+id/fl_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#B985EDBC"
+    android:fitsSystemWindows="true">
+
+    <EditText
+        android:visibility="invisible"
+        android:id="@+id/tv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/activity_main_search_bg"
+        android:gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:hint="挑好房上房PLUS"
+        android:ellipsize="end"
+        android:textColor="@android:color/black" />
+
+</FrameLayout>
+</RelativeLayout>

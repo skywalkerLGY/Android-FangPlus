@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/chatimage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:layout_marginTop="5dp"
+            android:src="@drawable/chat1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/chatname"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="曹大骏"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/chatscore"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="4.8分"/>
+
+                <TextView
+                    android:id="@+id/chatshopname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="骏儿房产分店"
+                    android:layout_marginLeft="9dp"
+                    android:background="#73DCFFF2"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/chatservelocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="[主营 园区]"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/chatrecommand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务态度好 | 回复及时"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/chatspeak"
+                    android:textSize="15sp"
+                    android:text="你好，你是在看苏州园区金鸡湖边的房子吗？"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/chattime"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2020-12-30 17:06"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

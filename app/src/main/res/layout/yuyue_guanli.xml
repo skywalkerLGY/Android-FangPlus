@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/zhihuihuanbao"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/loc"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您当前的位置：江苏大学" >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="-10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/viewpager"
+        android:layout_weight="2"
+        android:layout_gravity="center">
+        <androidx.viewpager.widget.PagerTabStrip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pagertab"
+            android:foregroundGravity="top">
+        </androidx.viewpager.widget.PagerTabStrip>
+    </androidx.viewpager.widget.ViewPager>
+
+    <TextView
+        android:layout_marginTop="-20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="____________________________________"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        >
+    </TextView>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/fragment1"
+
+
+        android:name="com.example.Fang_PLUS.FragmentData2"
+
+        />
+</LinearLayout>
